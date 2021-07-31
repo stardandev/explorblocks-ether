@@ -34,6 +34,7 @@ const Transactions = ({transactions, web3, blockNumber}) => {
             <div className="filter-description">
                 Filter the transactions by Address(to and from), and amount(&#62;, ether)
             </div>
+            
             <Search placeholder="input Address" onChange={e=>setFilterAddress(e.target.value)} onSearch={value=>setFilterAddress(value)} style={{ width: 200 }} />
         
             <Search placeholder="input Amount" onChange={e=>setFilterValue(e.target.value)} onSearch={(value) => setFilterValue(value)} style={{ width: 200 }} />

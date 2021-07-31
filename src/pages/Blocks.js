@@ -46,12 +46,12 @@ const Blocks = () => {
         const latestBocks = await getLatestBlocks();
 
         setBlocks(latestBocks);
-        console.log({latestBocks})
         setTimeout(getBlocks, 1000);
     }
     
     const getTransactions = async(blockNumber) => {
         const data = await web3.eth.getBlock(blockNumber, true);
+
         setTransactions(data.transactions);
         setCurrentBlock(blockNumber);
     }
@@ -76,6 +76,7 @@ const Blocks = () => {
                         )}
                     />
              }
+             
             <Transactions transactions={transactions} web3={web3} blockNumber={currentBlock} />
         </div>
     )

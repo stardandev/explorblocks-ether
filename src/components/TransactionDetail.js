@@ -2,7 +2,6 @@ const TransactionDetail = ({transaction}) => {
     return (
         <table>
             <tbody>
-                
                 <tr>
                     <td>Block Hash: </td>
                     <td>{transaction.blockHash}</td>
@@ -27,7 +26,6 @@ const TransactionDetail = ({transaction}) => {
                     <td>Gas Price: </td>
                     <td>{transaction.gasPrice}</td>
                 </tr>
-                
                 <tr>
                     <td>Value: </td>
                     <td>{transaction.value}</td>
