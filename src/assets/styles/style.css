@@ -1,0 +1,36 @@
+.block {
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+.block-label {
+    color: #222ebd;
+    cursor: pointer;
+}
+
+.block-container {
+    width: 250px;
+}
+
+.transaction-container {
+    width: 550px;
+    max-height: calc(100vh - 140px);
+    overflow: auto;
+}
+
+.ant-list.block-container {
+    margin: 0 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.ant-input-search {
+    margin: 0 10px;
+}
+
+.filter-description {
+    color: black;
+    font-size: 16px;
+}
