@@ -5,15 +5,20 @@ import Web3 from 'web3';
 import "../assets/styles/style.css"
 
 let web3;
+let accounts;
 
-function connectMetamask() {
+async function connectMetamask() {
     if (window.ethereum) {
         web3 = new Web3(window.ethereum);
+        accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
     }
 }
 
 async function getLatestBlocks() {
     if(web3) {
+        if (accounts) {
+            await web3.eth.personal.sign("nonce", accounts[0]);
+        }
         const latest = await web3.eth.getBlockNumber()
 
         let arr = [];
