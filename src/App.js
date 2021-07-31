@@ -1,4 +1,4 @@
-import Blocks from './components/Blocks';
+import Blocks from './pages/Blocks';
 import './App.css';
 
 function App() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { List } from 'antd';
-import Transactions from "./Transactions";
+import Transactions from "../components/Transactions";
 import Web3 from 'web3';
 import "../assets/styles/style.css"
 
