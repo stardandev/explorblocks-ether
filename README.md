@@ -7,25 +7,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://explor-blocks.netlify.app/
 
-## Features
+## Functionality
 
--Users can explore the latest 10 blocks
--Users can check the transactions for the block
--Users can see the detailed transaction and filter the transactions by address or amount
-## Available Scripts
+- Users can explore the latest 10 blocks
 
-In the project directory, you can run:
+- Users can check the transactions for the block
 
-### `yarn start`
+- Users can see the detailed transaction and filter the transactions by address or amount
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to run this project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `npm install` or `yarn` (This command will install all the required packages)
+- `npm run start` or `yarn start`(This command will run the project, you can check the project on http://localhost:3000)
 
-### `yarn test`
+## Used Libraries
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
- 
+react.js
+web3
+antdesign
